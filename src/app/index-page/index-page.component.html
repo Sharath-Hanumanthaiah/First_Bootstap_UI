@@ -1,0 +1,292 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container">
+        <a href="" class="navbar-brand">Sales Pro</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+             <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" (click)="scrollTo('home')" class="nav-link" [ngClass]="{ 'text-primary': currentSection==='home'}"> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#explore" (click)="scrollTo('explore')" [ngClass]="{ 'text-primary': currentSection==='explore'}" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#create" class="nav-link" [ngClass]="{ 'text-primary': currentSection==='create'}" (click)="scrollTo('create')">Create</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#share" class="nav-link" [ngClass]="{ 'text-primary': currentSection==='share'}" (click)="scrollTo('share')">Share</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)">
+    <!-- Home Section End -->
+    <div id="home">
+        <header id="home-section">
+            <div class="dark-overlay">
+                <div class="home-inner container">
+                    <div class="row">
+                        <div class="col-lg-8 d-none d-lg-block">
+                            <h1 class="display-4">
+                                Build <strong>social profile</strong> and gain revenue <strong> profile</strong>
+                            </h1>
+                            <div class="d-flex">
+                                <div class="p-4 align-self-start">
+                                    <i class="fa fa-check fa-2x"></i>
+
+                                </div>
+                                <div class="p-4 align-self-end">
+                                    I started a new project and followed @HDJEMAI s answer instructions. I now still get the same page
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-4 align-self-start">
+                                    <i class="fa fa-check fa-2x"></i>
+
+                                </div>
+                                <div class="p-4 align-self-end">
+                                    I started a new project and followed @HDJEMAI s answer instructions. I now still get the same page
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-4 align-self-start">
+                                    <i class="fa fa-check fa-2x"></i>
+
+                                </div>
+                                <div class="p-4 align-self-end">
+                                    I started a new project and followed @HDJEMAI s answer instructions. I now still get the same page
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card bg-primary text-center card-form">
+                                <div class="card-body">
+                                    <h3>Sign UP today</h3>
+                                    <p>Please fill the form to register</p>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-lg" placeholder="User Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-control-lg" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-lg" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-lg" placeholder="Confirm Password">
+                                        </div>
+                                        <input type="submit" value="SUbmit" class="btn btn-outline-light btn-block">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Home Section End -->
+
+    <!-- Explore Section Start-->
+    <div id="explore">
+        <section id="explore-head-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">Explore</h1>
+                        <p class="lead">
+                            Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.
+                        </p>
+                        <a href="" class="btn btn-outline-secondary">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore-section" class="bg-light text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../../assets/img/9.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Explore and Connect</h3>
+                        <p>
+                            Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.
+                        </p>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                <p>Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                <p>dd an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.A</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Explore Section End-->
+
+    <!-- Create section -->
+    <div id="create">
+        <section id="create-head-section" class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">Create</h1>
+                        <p class="lead">
+                            Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.
+                        </p>
+                        <a href="" class="btn btn-outline-light">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="create-section" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 order-2">
+                        <img src="../../assets/img/5.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                    </div>
+                    <div class="col-md-6 order-0">
+                        <h3>Create Your passion</h3>
+                        <p>
+                            Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.
+                        </p>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                <p>Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                <p>dd an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.A</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Create section -->
+
+    <!-- Share Section Start -->
+    <div id="share">
+        <section id="share-head-section" class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-5">
+                        <h1 class="display-4">Share</h1>
+                        <p class="lead">
+                            Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.
+                        </p>
+                        <a href="" class="btn btn-outline-light">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="share-section" class="bg-light text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="../../assets/img/2.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Share and Connect</h3>
+                        <p>
+                            Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.
+                        </p>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                <p>Add an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="p-4 align-self-start">
+                                <i class="fa fa-check fa-2x"></i>
+                            </div>
+                            <div class="p-4 align-self-end">
+                                <p>dd an ngbCollapse directive to the element with the navbar-collapse CSS class. Use the property in the component as the value for the directive.A</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Share Section End -->
+</div>
+
+<footer id="main-footer" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center py-4">
+                <h3>Sales Pro</h3>
+                <p>Copyright &copy; 2018</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#contact-modal" (click)="open(contact)">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- contact Model window -->
+<ng-template #contact let-modal>
+    <!-- <div class="modal fade text-dark" id="contact-modal">
+
+        <div class="modal-dialog">
+            <div class="modal-contact"> -->
+    <div class="modal-header text-dark">
+        <h5 class="modal-title" d="modal-basic-title">Contact Us</h5>
+        <button class="close" data-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                    <span>&times;</span>
+                </button>
+    </div>
+    <div class="modal-body text-dark">
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="name">Message</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary btn-block" (click)="modal.close('Save click')">Submit</button>
+    </div>
+    <!-- </div>
+        </div>
+    </div> -->
+</ng-template>
