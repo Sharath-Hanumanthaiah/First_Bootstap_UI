@@ -13,8 +13,6 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
   - **Title**
   - **Description**
   - **Status**: `To Do`, `In Progress`, `Done`
-  - **Due Date**
-  - **Start Date**
   - **User ID**
   - **Priority**
 
