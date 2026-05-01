@@ -15,14 +15,14 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
   - **Status**: `To Do`, `In Progress`, `Done`
   - **Due Date**
   - **Start Date**
-  - **User Name*
+  - **UserName*
   - **Priority**
 
 ### 2. User Management
 - Add, edit, delete users.
 - Each user should have:
   - **Unique ID**
-  - **Name**
+  - **UserName**
   - **Email**
   - **Role**
 
