@@ -11,7 +11,9 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
 - Each task should have:
   - **Unique ID**
   - **Title**
-  - **Description**
+  - **Description** 
+  - **Start Date**
+  - **User Name*
   - **Status**: `To Do`, `In Progress`, `Done`
   - **Due Date**
   - **Priority**
