@@ -22,7 +22,8 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
 - Add, edit, delete users.
 - Each user should have:
   - **Unique ID**
-  - **Name**
+  - **FirstName**
+  - **LastName**
   - **Email**
   - **Role**
 
