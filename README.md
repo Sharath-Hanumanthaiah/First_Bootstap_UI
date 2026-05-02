@@ -16,12 +16,6 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
   - **Due Date**
   - **Priority**
 
-### 4. View Tasks
-- View tasks using filters:
-  - By **UserName**
-  - By **Status**
-  - By **Due Date**
-  - By **Priority**
 
 
 ### 5. User can transfer the task to other user.
