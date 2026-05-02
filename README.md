@@ -17,6 +17,9 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
   - **Priority**
 
 
+## Authentication
+Create user login where user login with gmail and passowd or gmail auth or git Auth
+so user can click on the google Icon and user will be redirected to google login and get it authenticated and get back to same our page. Same happens for the Git also
 
 ### 5. User can transfer the task to other user.
 
