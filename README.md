@@ -17,6 +17,22 @@ A simple Task Tracker application to manage tasks and users with a lightweight i
   - **Priority**
 
 
+### 2. User Management
+- Add, edit, delete users.
+- Each user should have:
+  - **Unique ID**
+  - **Name**
+  - **Email**
+  - **Role**
+
+
+### 4. View Tasks
+- View tasks using filters:
+  - By **UserName**
+  - By **Status**
+  - By **Due Date**
+  - By **Priority**
+
 ## Authentication
 Create user login where user login with gmail and passowd or gmail auth or git Auth
 so user can click on the google Icon and user will be redirected to google login and get it authenticated and get back to same our page. Same happens for the Git also
