@@ -1,29 +1,59 @@
-# Project1
+# curly-barnacle-task-tracker
+# TaskTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+A simple Task Tracker application to manage tasks and users with a lightweight in-memory storage approach.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+### 1. CRUD for Tasks
+- Create, Read, Update, Delete tasks.
+- Each task should have:
+  - **Unique ID**
+  - **Title**
+  - **Description** 
+  - **Status**: `To Do`, `In Progress`, `Done`
+  - **Due Date**
+  - **Priority**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### 2. User Management
+- Add, edit, delete users.
+- Each user should have:
+  - **Unique ID**
+  - **Name**
+  - **Email**
+  - **Role**
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 4. View Tasks
+- View tasks using filters:
+  - By **UserName**
+  - By **Status**
+  - By **Due Date**
+  - By **Priority**
 
-## Running end-to-end tests
+## Authentication
+Create user login where user login with gmail and passowd or gmail auth or git Auth
+so user can click on the google Icon and user will be redirected to google login and get it authenticated and get back to same our page. Same happens for the Git also
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### 5. User can transfer the task to other user.
 
-## Further help
+### 6. Storage
+- No external storage (e.g., database, files).
+- All data stored in **variables (in-memory)**.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+---
 
-testing PR review
+## Deliverables
+
+- **Python source code** organized into modules:
+  - `models/`
+  - `services/`
+  - `routes/`
+- **UI** to interact with the application.
+- **requirements.txt** file for dependencies.
+- **README.md** file with setup and usage instructions.
+
+---
